@@ -1,0 +1,4 @@
+#constant colors
+CONNECTION_COLOR = (0, 255, 0)
+LANDMARK_COLOR = (0, 0, 255)
+TEXT_COLOR = (255, 0, 255)
