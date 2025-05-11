@@ -1,7 +1,6 @@
 import cv2
-import mediapipe as mp
 import time
-from base_modules.handtrackingmodule import HandDetector
+from base_modules import HandDetector
 from constants import TEXT_COLOR
 
 pTime = 0
