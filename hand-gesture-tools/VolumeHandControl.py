@@ -33,6 +33,7 @@ while True:
 
         cv2.circle(img, (x1, y1), 15, LANDMARK_COLOR, cv2.FILLED)
         cv2.circle(img, (x2, y2), 15, LANDMARK_COLOR, cv2.FILLED)
+        cv2.line(img, (x1, y1), (x2, y2), CONNECTION_COLOR, cv2.FILLED)
 
     cTime = time.time()
     fps = 1 / (cTime - pTime)
