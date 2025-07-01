@@ -1,7 +1,7 @@
 import cv2
 import time
 from base_modules import HolisticDetector
-from constants import TEXT_COLOR
+from CONSTANTS import TEXT_COLOR
 
 def main():
     cap = cv2.VideoCapture(0)

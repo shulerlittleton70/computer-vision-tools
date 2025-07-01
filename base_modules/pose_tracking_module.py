@@ -1,7 +1,7 @@
 import cv2
 import mediapipe as mp
 import time
-from constants import TEXT_COLOR, LANDMARK_COLOR, CONNECTION_COLOR
+from CONSTANTS import TEXT_COLOR, LANDMARK_COLOR, CONNECTION_COLOR
 
 
 class PoseDetector:

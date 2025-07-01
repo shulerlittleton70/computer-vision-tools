@@ -6,7 +6,7 @@ import platform
 from collections import deque
 
 from base_modules import HandDetector
-from constants import TEXT_COLOR, DISTANCE_COLOR, NULL_COLOR
+from CONSTANTS import TEXT_COLOR, DISTANCE_COLOR, NULL_COLOR
 
 # OS detection
 IS_MAC = platform.system() == "Darwin"

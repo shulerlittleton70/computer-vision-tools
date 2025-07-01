@@ -1,7 +1,7 @@
 import mediapipe as mp
 import time
 import cv2
-from constants import TEXT_COLOR, CONNECTION_COLOR, LANDMARK_COLOR
+from CONSTANTS import TEXT_COLOR, CONNECTION_COLOR, LANDMARK_COLOR
 
 
 class FaceMeshDetector:
@@ -19,7 +19,7 @@ class FaceMeshDetector:
             min_tracking_confidence=self.trackingCon
         )
         self.mpDraw = mp.solutions.drawing_utils
-        self.drawSpec = self.mpDraw.DrawingSpec(color=LANDMARK_COLOR, thickness=5, circle_radius=1)
+        self.drawSpec = self.mpDraw.DrawingSpec(color=LANDMARK_COLOR, thickness=1, circle_radius=1)
 
     def findFaceMesh(self, img, draw=True):
         imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
@@ -46,7 +46,7 @@ class FaceMeshDetector:
                 cx, cy = int(lm.x * w), int(lm.y * h)
                 lmList.append([id, cx, cy])
                 if draw:
-                    cv2.circle(img, (cx, cy), 2, TEXT_COLOR, cv2.FILLED)
+                    cv2.circle(img, (cx, cy), .5, TEXT_COLOR, cv2.FILLED)
         return lmList
 
 

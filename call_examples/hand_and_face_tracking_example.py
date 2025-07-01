@@ -2,8 +2,8 @@ import time
 import cv2
 
 from base_modules import FaceMeshDetector
-from base_modules.handtrackingmodule import HandDetector
-from constants import TEXT_COLOR
+from base_modules.hand_tracking_module import HandDetector
+from CONSTANTS import TEXT_COLOR
 
 def main():
     cap = cv2.VideoCapture(0)

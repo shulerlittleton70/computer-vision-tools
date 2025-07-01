@@ -5,8 +5,8 @@ import subprocess
 import shutil
 import math
 import numpy as np
-from base_modules.facemeshmodule import FaceMeshDetector
-from constants import TEXT_COLOR
+from base_modules.face_mesh_module import FaceMeshDetector
+from CONSTANTS import TEXT_COLOR
 
 IS_MAC = platform.system() == "Darwin"
 IS_WINDOWS = platform.system() == "Windows"

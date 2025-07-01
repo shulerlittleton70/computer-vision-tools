@@ -1,6 +1,6 @@
 import cv2
 import mediapipe as mp
-from constants import TEXT_COLOR, LANDMARK_COLOR, CONNECTION_COLOR
+from CONSTANTS import TEXT_COLOR, LANDMARK_COLOR, CONNECTION_COLOR
 
 
 class HolisticDetector:
@@ -22,8 +22,8 @@ class HolisticDetector:
         self.mpDraw = mp.solutions.drawing_utils
 
         # All drawing specs come from constants
-        self.landmarkSpec = self.mpDraw.DrawingSpec(color=LANDMARK_COLOR, thickness=2, circle_radius=2)
-        self.connectionSpec = self.mpDraw.DrawingSpec(color=CONNECTION_COLOR, thickness=2)
+        self.landmarkSpec = self.mpDraw.DrawingSpec(color=LANDMARK_COLOR, thickness=1, circle_radius=1)
+        self.connectionSpec = self.mpDraw.DrawingSpec(color=CONNECTION_COLOR, thickness=1)
 
     def findHolistic(self, img, draw=True):
         imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)

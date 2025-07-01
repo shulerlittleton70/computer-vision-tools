@@ -1,7 +1,7 @@
 import mediapipe as mp
 import time
 import cv2
-from constants import TEXT_COLOR, CONNECTION_COLOR, LANDMARK_COLOR
+from CONSTANTS import TEXT_COLOR, CONNECTION_COLOR, LANDMARK_COLOR
 
 
 class HandDetector:

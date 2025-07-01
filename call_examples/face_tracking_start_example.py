@@ -1,21 +1,21 @@
-import cv2
 import time
-from base_modules import PoseDetector
-from constants import TEXT_COLOR
+import cv2
+from base_modules import FaceMeshDetector
+from CONSTANTS import TEXT_COLOR
 
 def main():
     cap = cv2.VideoCapture(0)
-    detector = PoseDetector()
+    detector = FaceMeshDetector()
 
     pTime = 0
 
     while True:
         success, img = cap.read()
-        img = detector.findPose(img)
+        img = detector.findFaceMesh(img)
         lmList = detector.findPosition(img)
 
         if lmList:
-            print(f"Nose: {lmList[0]}")  # ID 0 is the nose landmark
+            print(f"Detected {len(lmList)} landmarks. Point 1: {lmList[1]}")
 
         # FPS calculation
         cTime = time.time()
@@ -32,7 +32,7 @@ def main():
             3
         )
 
-        cv2.imshow("Pose Detection", img)
+        cv2.imshow("Face Mesh Live", img)
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
 

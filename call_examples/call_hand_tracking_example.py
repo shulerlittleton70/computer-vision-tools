@@ -1,7 +1,7 @@
 import cv2
 import time
 from base_modules import HandDetector
-from constants import TEXT_COLOR
+from CONSTANTS import TEXT_COLOR
 
 pTime = 0
 cap = cv2.VideoCapture(0)
