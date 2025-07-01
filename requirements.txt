@@ -4,3 +4,7 @@ opencv-python
 screen-brightness-control
 pycaw
 comtypes
+cvzone
+pyfirmata
+controller
+

@@ -1,6 +1,7 @@
-from .handtrackingmodule import HandDetector
-from .facemeshmodule import FaceMeshDetector
-from .poseTrackingModule import PoseDetector
-from .holisticModule import HolisticDetector
+from .hand_tracking_module import HandDetector
+from .face_mesh_module import FaceMeshDetector
+from .pose_tracking_module import PoseDetector
+from .holistic_module import HolisticDetector
+import controller
 
-__all__ = ["HandDetector", "FaceMeshDetector","PoseDetector","HolisticDetector"]
+__all__ = ["HandDetector", "FaceMeshDetector","PoseDetector","HolisticDetector","controller"]
